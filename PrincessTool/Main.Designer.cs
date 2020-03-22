@@ -35,7 +35,8 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.Label_Extract_Text = new System.Windows.Forms.Label();
-            this.TextBox_Extact_Folder = new System.Windows.Forms.TextBox();
+            this.TextBox_Extract_Folder = new System.Windows.Forms.TextBox();
+            this.Button_Extract_Open = new System.Windows.Forms.Button();
             this.GroupBox_Options.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +48,7 @@
             this.Button_Origin_Open.TabIndex = 0;
             this.Button_Origin_Open.Text = "Open...";
             this.Button_Origin_Open.UseVisualStyleBackColor = true;
+            this.Button_Origin_Open.Click += new System.EventHandler(this.Button_Origin_Open_Click);
             // 
             // TextBox_Origin_Folder
             // 
@@ -70,7 +72,7 @@
             this.GroupBox_Options.Controls.Add(this.checkBox1);
             this.GroupBox_Options.Location = new System.Drawing.Point(12, 47);
             this.GroupBox_Options.Name = "GroupBox_Options";
-            this.GroupBox_Options.Size = new System.Drawing.Size(560, 135);
+            this.GroupBox_Options.Size = new System.Drawing.Size(560, 130);
             this.GroupBox_Options.TabIndex = 3;
             this.GroupBox_Options.TabStop = false;
             this.GroupBox_Options.Text = "Extract options:";
@@ -104,20 +106,31 @@
             this.Label_Extract_Text.TabIndex = 5;
             this.Label_Extract_Text.Text = "Dest dir:";
             // 
-            // TextBox_Extact_Folder
+            // TextBox_Extract_Folder
             // 
-            this.TextBox_Extact_Folder.Location = new System.Drawing.Point(82, 219);
-            this.TextBox_Extact_Folder.Name = "TextBox_Extact_Folder";
-            this.TextBox_Extact_Folder.ReadOnly = true;
-            this.TextBox_Extact_Folder.Size = new System.Drawing.Size(364, 27);
-            this.TextBox_Extact_Folder.TabIndex = 6;
+            this.TextBox_Extract_Folder.Location = new System.Drawing.Point(82, 219);
+            this.TextBox_Extract_Folder.Name = "TextBox_Extract_Folder";
+            this.TextBox_Extract_Folder.ReadOnly = true;
+            this.TextBox_Extract_Folder.Size = new System.Drawing.Size(364, 27);
+            this.TextBox_Extract_Folder.TabIndex = 6;
+            // 
+            // Button_Extract_Open
+            // 
+            this.Button_Extract_Open.Location = new System.Drawing.Point(354, 183);
+            this.Button_Extract_Open.Name = "Button_Extract_Open";
+            this.Button_Extract_Open.Size = new System.Drawing.Size(92, 30);
+            this.Button_Extract_Open.TabIndex = 7;
+            this.Button_Extract_Open.Text = "Open...";
+            this.Button_Extract_Open.UseVisualStyleBackColor = true;
+            this.Button_Extract_Open.Click += new System.EventHandler(this.Button_Extract_Open_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 258);
-            this.Controls.Add(this.TextBox_Extact_Folder);
+            this.Controls.Add(this.Button_Extract_Open);
+            this.Controls.Add(this.TextBox_Extract_Folder);
             this.Controls.Add(this.Label_Extract_Text);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.GroupBox_Options);
@@ -147,7 +160,8 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label Label_Extract_Text;
-        private System.Windows.Forms.TextBox TextBox_Extact_Folder;
+        private System.Windows.Forms.TextBox TextBox_Extract_Folder;
+        private System.Windows.Forms.Button Button_Extract_Open;
     }
 }
 

@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FolderDialog.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>

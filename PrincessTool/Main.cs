@@ -23,8 +23,25 @@ namespace PrincessTool
             TextBox_Origin_Folder.Text = Path.Combine(localLowDir, @"Cygames\PrincessConnectReDive\");
 
             var appDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            TextBox_Extact_Folder.Text = Path.Combine(appDir, @"dest\");
+            TextBox_Extract_Folder.Text = Path.Combine(appDir, @"dest\");
+        }
 
+        private void Button_Origin_Open_Click(object sender, EventArgs e)
+        {
+            var result = FolderDialog.Pick(TextBox_Origin_Folder.Text, Handle);
+            if (result != null)
+            {
+                TextBox_Origin_Folder.Text = result;
+            }
+        }
+
+        private void Button_Extract_Open_Click(object sender, EventArgs e)
+        {
+            var result = FolderDialog.Pick(TextBox_Extract_Folder.Text, Handle);
+            if (result != null)
+            {
+                TextBox_Extract_Folder.Text = result;
+            }
         }
     }
 }
