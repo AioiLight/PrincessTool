@@ -28,7 +28,7 @@ namespace PrincessTool
 
         private void Button_Origin_Open_Click(object sender, EventArgs e)
         {
-            var result = FolderDialog.Pick(TextBox_Origin_Folder.Text, Handle);
+            var result = Dialog.Folder(TextBox_Origin_Folder.Text, Handle);
             if (result != null)
             {
                 TextBox_Origin_Folder.Text = result;
@@ -37,11 +37,28 @@ namespace PrincessTool
 
         private void Button_Extract_Open_Click(object sender, EventArgs e)
         {
-            var result = FolderDialog.Pick(TextBox_Extract_Folder.Text, Handle);
+            var result = Dialog.Folder(TextBox_Extract_Folder.Text, Handle);
             if (result != null)
             {
                 TextBox_Extract_Folder.Text = result;
             }
+        }
+
+        private void Button_Extract_Click(object sender, EventArgs e)
+        {
+            var origin = TextBox_Origin_Folder.Text;
+            var dest = TextBox_Extract_Folder.Text;
+            if (!Directory.Exists(origin))
+            {
+                Dialog.Error("Original directory is not found",
+                    "Original directory is not found.\n" +
+                    "Check path of directory.",
+                    Handle);
+            }
+
+            Directory.CreateDirectory(dest);
+
+
         }
     }
 }

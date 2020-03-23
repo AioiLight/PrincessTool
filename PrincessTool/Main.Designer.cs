@@ -33,7 +33,7 @@
             this.Label_Origin_Text = new System.Windows.Forms.Label();
             this.GroupBox_Options = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Button_Extract = new System.Windows.Forms.Button();
             this.Label_Extract_Text = new System.Windows.Forms.Label();
             this.TextBox_Extract_Folder = new System.Windows.Forms.TextBox();
             this.Button_Extract_Open = new System.Windows.Forms.Button();
@@ -87,15 +87,16 @@
             this.checkBox1.Text = "Rename Hashed filename";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // Button_Extract
             // 
-            this.button1.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(452, 206);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 40);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Extract";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Button_Extract.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Button_Extract.Location = new System.Drawing.Point(452, 206);
+            this.Button_Extract.Name = "Button_Extract";
+            this.Button_Extract.Size = new System.Drawing.Size(120, 40);
+            this.Button_Extract.TabIndex = 4;
+            this.Button_Extract.Text = "Extract";
+            this.Button_Extract.UseVisualStyleBackColor = true;
+            this.Button_Extract.Click += new System.EventHandler(this.Button_Extract_Click);
             // 
             // Label_Extract_Text
             // 
@@ -132,7 +133,7 @@
             this.Controls.Add(this.Button_Extract_Open);
             this.Controls.Add(this.TextBox_Extract_Folder);
             this.Controls.Add(this.Label_Extract_Text);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Button_Extract);
             this.Controls.Add(this.GroupBox_Options);
             this.Controls.Add(this.Label_Origin_Text);
             this.Controls.Add(this.Button_Origin_Open);
@@ -158,7 +159,7 @@
         private System.Windows.Forms.Label Label_Origin_Text;
         private System.Windows.Forms.GroupBox GroupBox_Options;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Button_Extract;
         private System.Windows.Forms.Label Label_Extract_Text;
         private System.Windows.Forms.TextBox TextBox_Extract_Folder;
         private System.Windows.Forms.Button Button_Extract_Open;
