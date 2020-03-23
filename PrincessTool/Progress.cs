@@ -15,7 +15,8 @@ namespace PrincessTool
 
             Task = task;
 
-            Text = caption;
+            Text = $"Progressing: {caption}";
+            Label_Desc.Text = $"Progressing: {caption}";
         }
 
         private int MaxValue { get; set; }
