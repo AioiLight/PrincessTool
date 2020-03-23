@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace AioiLight.PrincessTool
 {
-    static class Program
+    internal static class Program
     {
         /// <summary>
         /// アプリケーションのメイン エントリ ポイントです。
@@ -18,5 +18,8 @@ namespace AioiLight.PrincessTool
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
         }
+
+        internal static string Origin { get; set; }
+        internal static string Dest { get; set; }
     }
 }

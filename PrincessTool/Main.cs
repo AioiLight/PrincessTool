@@ -46,9 +46,9 @@ namespace AioiLight.PrincessTool
 
         private void Button_Extract_Click(object sender, EventArgs e)
         {
-            var origin = TextBox_Origin_Folder.Text;
-            var dest = TextBox_Extract_Folder.Text;
-            if (!Directory.Exists(origin))
+            Program.Origin = TextBox_Origin_Folder.Text;
+            Program.Dest = TextBox_Extract_Folder.Text;
+            if (!Directory.Exists(Program.Origin))
             {
                 Dialog.Error("Original directory is not found",
                     "Original directory is not found.\n" +
@@ -56,7 +56,7 @@ namespace AioiLight.PrincessTool
                     Handle);
             }
 
-            Directory.CreateDirectory(dest);
+            Directory.CreateDirectory(Program.Dest);
 
 
         }
