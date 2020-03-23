@@ -90,7 +90,7 @@ namespace AioiLight.PrincessTool.Works
 
                 try
                 {
-                    // たまにファイル名が重複しているやつがある？
+                    // note:たまにファイル名が重複しているやつがある？
                     File.Move(item, Path.Combine(Program.Dest, result));
                 }
                 catch (IOException)
