@@ -16,10 +16,12 @@ namespace AioiLight.PrincessTool
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            MainWindow = new Main();
+            Application.Run(MainWindow);
         }
 
         internal static string Origin { get; set; }
         internal static string Dest { get; set; }
+        internal static Main MainWindow { get; set; }
     }
 }

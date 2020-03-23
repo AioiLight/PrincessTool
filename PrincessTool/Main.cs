@@ -58,6 +58,7 @@ namespace AioiLight.PrincessTool
 
             Directory.CreateDirectory(Program.Dest);
 
+            new Works.FileCopy();
 
         }
     }

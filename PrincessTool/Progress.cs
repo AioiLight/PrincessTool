@@ -17,6 +17,8 @@ namespace AioiLight.PrincessTool
 
             Text = $"Progressing: {caption}";
             Label_Desc.Text = $"Progressing: {caption}";
+
+            ShowDialog(Program.MainWindow);
         }
 
         private int MaxValue { get; set; }
