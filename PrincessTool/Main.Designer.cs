@@ -32,7 +32,7 @@
             this.TextBox_Origin_Folder = new System.Windows.Forms.TextBox();
             this.Label_Origin_Text = new System.Windows.Forms.Label();
             this.GroupBox_Options = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.CheckBox_Rename = new System.Windows.Forms.CheckBox();
             this.Button_Extract = new System.Windows.Forms.Button();
             this.Label_Extract_Text = new System.Windows.Forms.Label();
             this.TextBox_Extract_Folder = new System.Windows.Forms.TextBox();
@@ -69,7 +69,7 @@
             // 
             // GroupBox_Options
             // 
-            this.GroupBox_Options.Controls.Add(this.checkBox1);
+            this.GroupBox_Options.Controls.Add(this.CheckBox_Rename);
             this.GroupBox_Options.Location = new System.Drawing.Point(12, 47);
             this.GroupBox_Options.Name = "GroupBox_Options";
             this.GroupBox_Options.Size = new System.Drawing.Size(560, 130);
@@ -79,13 +79,13 @@
             // 
             // checkBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 26);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(192, 24);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Rename Hashed filename";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.CheckBox_Rename.AutoSize = true;
+            this.CheckBox_Rename.Location = new System.Drawing.Point(6, 26);
+            this.CheckBox_Rename.Name = "checkBox1";
+            this.CheckBox_Rename.Size = new System.Drawing.Size(192, 24);
+            this.CheckBox_Rename.TabIndex = 0;
+            this.CheckBox_Rename.Text = "Rename Hashed filename";
+            this.CheckBox_Rename.UseVisualStyleBackColor = true;
             // 
             // Button_Extract
             // 
@@ -158,7 +158,7 @@
         private System.Windows.Forms.TextBox TextBox_Origin_Folder;
         private System.Windows.Forms.Label Label_Origin_Text;
         private System.Windows.Forms.GroupBox GroupBox_Options;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox CheckBox_Rename;
         private System.Windows.Forms.Button Button_Extract;
         private System.Windows.Forms.Label Label_Extract_Text;
         private System.Windows.Forms.TextBox TextBox_Extract_Folder;

@@ -60,6 +60,11 @@ namespace AioiLight.PrincessTool
 
             new Works.FileCopy();
 
+            if (CheckBox_Rename.Checked)
+            {
+                new Works.RenameHashedFile();
+            }
+
         }
     }
 }
