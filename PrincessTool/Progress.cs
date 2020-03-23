@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace PrincessTool
+namespace AioiLight.PrincessTool
 {
     public partial class Progress : Form
     {

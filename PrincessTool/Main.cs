@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PrincessTool
+namespace AioiLight.PrincessTool
 {
     public partial class Main : Form
     {

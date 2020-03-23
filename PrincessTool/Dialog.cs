@@ -2,7 +2,7 @@
 using System.Reflection;
 using Microsoft.WindowsAPICodePack.Dialogs;
 
-namespace PrincessTool
+namespace AioiLight.PrincessTool
 {
     internal static class Dialog
     {

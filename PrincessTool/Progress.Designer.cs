@@ -1,4 +1,4 @@
-﻿namespace PrincessTool
+﻿namespace AioiLight.PrincessTool
 {
     partial class Progress
     {
