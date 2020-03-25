@@ -58,7 +58,7 @@ namespace AioiLight.PrincessTool
 
             Directory.CreateDirectory(Program.Dest);
 
-            //new Works.FileCopy();
+            new Works.FileCopy();
 
             if (CheckBox_Rename.Checked)
             {
@@ -68,7 +68,14 @@ namespace AioiLight.PrincessTool
             {
                 new Works.ConvertSound("b", "Convert BGM audio");
             }
-
+            if (CheckBox_Convert_SE.Checked)
+            {
+                new Works.ConvertSound("s", "Convert SE audio");
+            }
+            if (CheckBox_Convert_Voice.Checked)
+            {
+                new Works.ConvertSound("v", "Convert Voice audio");
+            }
         }
     }
 }
