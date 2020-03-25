@@ -37,6 +37,9 @@
             this.Label_Extract_Text = new System.Windows.Forms.Label();
             this.TextBox_Extract_Folder = new System.Windows.Forms.TextBox();
             this.Button_Extract_Open = new System.Windows.Forms.Button();
+            this.CheckBox_Convert_Voice = new System.Windows.Forms.CheckBox();
+            this.CheckBox_Convert_SE = new System.Windows.Forms.CheckBox();
+            this.CheckBox_Convert_BGM = new System.Windows.Forms.CheckBox();
             this.GroupBox_Options.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +72,9 @@
             // 
             // GroupBox_Options
             // 
+            this.GroupBox_Options.Controls.Add(this.CheckBox_Convert_BGM);
+            this.GroupBox_Options.Controls.Add(this.CheckBox_Convert_SE);
+            this.GroupBox_Options.Controls.Add(this.CheckBox_Convert_Voice);
             this.GroupBox_Options.Controls.Add(this.CheckBox_Rename);
             this.GroupBox_Options.Location = new System.Drawing.Point(12, 47);
             this.GroupBox_Options.Name = "GroupBox_Options";
@@ -77,11 +83,11 @@
             this.GroupBox_Options.TabStop = false;
             this.GroupBox_Options.Text = "Extract options:";
             // 
-            // checkBox1
+            // CheckBox_Rename
             // 
             this.CheckBox_Rename.AutoSize = true;
             this.CheckBox_Rename.Location = new System.Drawing.Point(6, 26);
-            this.CheckBox_Rename.Name = "checkBox1";
+            this.CheckBox_Rename.Name = "CheckBox_Rename";
             this.CheckBox_Rename.Size = new System.Drawing.Size(192, 24);
             this.CheckBox_Rename.TabIndex = 0;
             this.CheckBox_Rename.Text = "Rename Hashed filename";
@@ -125,6 +131,36 @@
             this.Button_Extract_Open.UseVisualStyleBackColor = true;
             this.Button_Extract_Open.Click += new System.EventHandler(this.Button_Extract_Open_Click);
             // 
+            // CheckBox_Convert_Voice
+            // 
+            this.CheckBox_Convert_Voice.AutoSize = true;
+            this.CheckBox_Convert_Voice.Location = new System.Drawing.Point(232, 26);
+            this.CheckBox_Convert_Voice.Name = "CheckBox_Convert_Voice";
+            this.CheckBox_Convert_Voice.Size = new System.Drawing.Size(224, 24);
+            this.CheckBox_Convert_Voice.TabIndex = 1;
+            this.CheckBox_Convert_Voice.Text = "Convert voice audio file (.wav)";
+            this.CheckBox_Convert_Voice.UseVisualStyleBackColor = true;
+            // 
+            // CheckBox_Convert_SE
+            // 
+            this.CheckBox_Convert_SE.AutoSize = true;
+            this.CheckBox_Convert_SE.Location = new System.Drawing.Point(6, 86);
+            this.CheckBox_Convert_SE.Name = "CheckBox_Convert_SE";
+            this.CheckBox_Convert_SE.Size = new System.Drawing.Size(207, 24);
+            this.CheckBox_Convert_SE.TabIndex = 2;
+            this.CheckBox_Convert_SE.Text = "Convert SE audio file (.wav)";
+            this.CheckBox_Convert_SE.UseVisualStyleBackColor = true;
+            // 
+            // CheckBox_Convert_BGM
+            // 
+            this.CheckBox_Convert_BGM.AutoSize = true;
+            this.CheckBox_Convert_BGM.Location = new System.Drawing.Point(6, 56);
+            this.CheckBox_Convert_BGM.Name = "CheckBox_Convert_BGM";
+            this.CheckBox_Convert_BGM.Size = new System.Drawing.Size(220, 24);
+            this.CheckBox_Convert_BGM.TabIndex = 3;
+            this.CheckBox_Convert_BGM.Text = "Convert BGM audio file (.wav)";
+            this.CheckBox_Convert_BGM.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -163,6 +199,9 @@
         private System.Windows.Forms.Label Label_Extract_Text;
         private System.Windows.Forms.TextBox TextBox_Extract_Folder;
         private System.Windows.Forms.Button Button_Extract_Open;
+        private System.Windows.Forms.CheckBox CheckBox_Convert_BGM;
+        private System.Windows.Forms.CheckBox CheckBox_Convert_SE;
+        private System.Windows.Forms.CheckBox CheckBox_Convert_Voice;
     }
 }
 

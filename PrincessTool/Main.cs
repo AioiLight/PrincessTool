@@ -58,11 +58,15 @@ namespace AioiLight.PrincessTool
 
             Directory.CreateDirectory(Program.Dest);
 
-            new Works.FileCopy();
+            //new Works.FileCopy();
 
             if (CheckBox_Rename.Checked)
             {
                 new Works.RenameHashedFile();
+            }
+            if (CheckBox_Convert_BGM.Checked)
+            {
+                new Works.ConvertSound("b", "Convert BGM audio");
             }
 
         }
