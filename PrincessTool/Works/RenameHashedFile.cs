@@ -14,6 +14,11 @@ namespace AioiLight.PrincessTool.Works
             var files = Directory.GetFiles(Program.Dest, "*.*", SearchOption.AllDirectories);
             var filesAmount = files.Count();
 
+            if (!File.Exists(Path.Combine(Program.Dest, @"manifest.db")))
+            {
+                return;
+            }
+
             HashList = new Dictionary<string, string>();
             var connection = new SQLiteConnection($"Data Source={Path.Combine(Program.Dest, @"manifest.db")};");
             connection.Open();

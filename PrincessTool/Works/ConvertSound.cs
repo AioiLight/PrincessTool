@@ -11,6 +11,12 @@ namespace AioiLight.PrincessTool.Works
         public ConvertSound(string folder, string desc)
         {
             var targetFolder = Path.Combine(Program.Dest, folder);
+
+            if (!Directory.Exists(targetFolder))
+            {
+                return;
+            }
+
             // .awb, .acbファイルのみ該当させる。
             var files = Directory.GetFiles(targetFolder, "*.*", SearchOption.AllDirectories)
                 .Where(f => f.EndsWith(".awb", StringComparison.OrdinalIgnoreCase)
